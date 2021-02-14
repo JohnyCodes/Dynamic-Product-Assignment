@@ -470,10 +470,10 @@ select:focus {
 /* ------------Brand List--------------- */
 
 .brands {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
-  maring: 100px auto 50px;
+  margin: 100px auto 50px;
 }
 
 #brandlist {
