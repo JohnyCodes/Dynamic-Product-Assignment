@@ -141,6 +141,11 @@ p {
     font-size: var(--fs-h4);
     line-height: 32px;
   }
+
+  .small-container .brands {
+    display: grid;
+    grid-template-columns: 200px 3fr;
+  }
 }
 
 /*---------------- Background -------------------*/
@@ -460,4 +465,41 @@ select:focus {
 .single-product .fa {
   color: var(--btn-background);
   margin-left: 10px;
+}
+
+/* ------------Brand List--------------- */
+
+.brands {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  maring: 100px auto 50px;
+}
+
+#brandlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 5fr));
+  gap: 1rem;
+  margin: 50px;
+}
+
+#brandlist li {
+  list-style: none;
+  color: var(--btn-background);
+  border-radius: 10px;
+  border: solid 3px;
+  padding: 15px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+#brandlist li:hover {
+  background: var(--btn-background);
+  color: #fff;
+}
+
+#brandlist li a {
+  text-decoration: none;
+  font-family: var(--secondary);
 }
